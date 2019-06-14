@@ -1,0 +1,60 @@
+:root {
+    --sun-color: gold;
+    --ray-height:5px;
+    --ray-long-width:120px;
+    --ray-short-width:70px;
+  }
+
+.sun-circle{
+    width: 100px;
+    height:100px ;
+    background-color: var(--sun-color);
+     position: absolute;
+     border-radius: 0 0 0 100%;
+     top:0;
+     right: 0;
+}
+.ray1{
+    width: var(--ray-long-width);
+   height:var(--ray-height) ;
+   background-color: var(--sun-color);
+    position: absolute;
+    top:10px;
+    right: 110px;
+}
+.ray2{
+    width: var(--ray-short-width);
+    height:var(--ray-height) ;
+    background-color: var(--sun-color);
+     position: absolute;
+     transform: rotate(-23deg);
+     top:60px;
+     right: 100px;
+}
+.ray3{
+    width: var(--ray-long-width);
+   height:var(--ray-height) ;
+   background-color: var(--sun-color);
+    position: absolute;
+    transform: rotate(-45deg);
+    top:120px;
+    right: 65px;
+}
+.ray4{
+    width: var(--ray-short-width);
+   height:var(--ray-height) ;
+   background-color: var(--sun-color);
+    position: absolute;
+    transform: rotate(-68deg);
+     top:130px;
+     right: 30px;
+}
+.ray5{
+    width: var(--ray-long-width);
+    height:var(--ray-height);
+    background-color:  var(--sun-color);
+     position: absolute;
+     transform: rotate(-90deg);
+     top:165px;
+     right: -45px;
+}

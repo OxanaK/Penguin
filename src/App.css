@@ -1,33 +1,186 @@
-.App {
-  text-align: center;
+:root {
+  --penguin-skin:black;
+  --penguin-belly: white;
+  --penguin-beak: orange;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.penguin-container {
+    
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 700px;
+  height: 700px;
+   z-index: 5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.penguin-top-container {
+  top: 10%;
+  left: 25%;
+  background: var(--penguin-skin, gray);
+  width: 50%;
+  height: 45%;
+  border-radius: 70% 70% 60% 60%;
+   z-index: 15;
 }
 
-.App-link {
-  color: #61dafb;
+.penguin-bottom-container {
+  top: 40%;
+  left: 23.5%;
+  background: var(--penguin-skin, gray);
+  width: 53%;
+  height: 45%;
+  border-radius: 70% 70% 100% 100%;
+   z-index: 15;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-hand {
+  top: 0%;
+  left: -5%;
+  background: var(--penguin-skin, gray);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 120% 30%;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.left-hand {
+  top: 0%;
+  left: 75%;
+  background: var(--penguin-skin, gray);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 30% 120%;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+
+.right-cheek {
+  top: 15%;
+  left: 35%;
+  background: var(--penguin-belly, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.left-cheek {
+  top: 15%;
+  left: 5%;
+  background: var(--penguin-belly, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.belly {
+  top: 60%;
+  left: 2.5%;
+  background: var(--penguin-belly, white);
+  width: 95%;
+  height: 100%;
+  border-radius: 120% 120% 100% 100%;
+
+}
+
+.right-feet {
+
+  top: 85%;
+  left: 60%;
+  background: var(--penguin-beak, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-80deg);
+  z-index: -2;  
+}
+
+.left-feet {
+  top: 85%;
+  left: 25%;
+  background: var(--penguin-beak, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(80deg);
+  z-index: -2;  
+}
+
+.right-eye {
+  top: 45%;
+  left: 60%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%; 
+}
+
+.left-eye {
+  top: 45%;
+  left: 25%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;  
+}
+
+.eye-sparkle {
+  top: 25%;
+  left: 15%;
+  background: white;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;  
+}
+
+.blush-right {
+  top: 65%;
+  left: 15%;
+  background: pink;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;  
+}
+
+.blush-left {
+  top: 65%;
+  left: 70%;
+  background: pink;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;  
+}
+
+.beak-top {
+  top: 60%;
+  left: 40%;
+  background: var(--penguin-beak, orange);
+  width: 20%;
+  height: 10%;
+  border-radius: 50%;  
+}
+
+.beak-bottom {
+  top: 65%;
+  left: 42%;
+  background: var(--penguin-beak, orange);
+  width: 16%;
+  height: 10%;
+  border-radius: 50%;  
+  
+}
+
+.container {
+    width:1000px;
+    height:800px;
+    margin-left:auto;
+    margin-right: auto;
+    background-image: linear-gradient(to top, 	lightblue , white);
+  position: absolute;
+}
+
+.penguin-container * {
+  position: absolute;
 }
