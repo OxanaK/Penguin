@@ -3,8 +3,6 @@
 
 drawing a cute picture :)         
 
-Try it! ----> https://oxanak.github.io/Penguin/Penguin.html
-
 ## Technology:
 React, CSS
 
